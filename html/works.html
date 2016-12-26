@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/works.css"/>
+		<script src="../libs/jQuery.js"></script>
+		<script src="../libs/angular.js"></script>
+		<script src="../libs/angular-ui-router.js"></script>
+		<script src="../libs/angular-route.js"></script>
+		<script src="../js/work.js"></script>
+	</head>
+	<body ng-controller="myCtrl">
+		
+		<!--头部导航栏-------------------------------------->
+		<nav id="top">
+			<div class="toplogo"><a href="#"><img src="../images/导航栏/tlogo.png"/></a></div>
+			<div class="topnav">
+				<div>
+				<ul>
+					<li>
+						<a href="#"><span class="bigA">依依视觉</span><span class="somallA">Home</span></a>
+					</li>
+					<li>
+						<a href="#"><span class="bigA">新闻活动</span><span class="somallA">News</span></a>
+					</li>
+					<li>
+						<a href="#" class="nowA"><span class="bigA">作品展示</span><span class="somallA">Words</span></a>
+					</li>
+					<li>
+						<a href="#"><span class="bigA">客片欣赏</span><span class="somallA">Guest</span></a>
+					</li>
+					<li>
+						<a href="#"><span class="bigA">服务报价</span><span class="somallA">Service</span></a>
+					</li>
+					<li>
+						<a href="#"><span class="bigA">依依品牌</span><span class="somallA">Tmail</span></a>
+					</li>
+					<li>
+						<a href="#"><span class="bigA">联系我们</span><span class="somallA">Contact</span></a>
+					</li>
+				</ul>
+				
+				<div class="lianxi">
+					<a href=""><img src="../images/导航栏/top_r3_c20.png"/></a>
+					<a href=""><img src="../images/导航栏/top_r3_c22.png"/></a>
+					<a href=""><img src="../images/导航栏/top_r3_c24.png"/></a>
+				</div>
+				
+				</div>
+			</div>
+		</nav>
+		
+		<section class="zuopinlog">
+				<div><a href=""><img src="../images/首页图片/tit2.png"/></a></div>
+		</section>
+		
+<!--小导航栏-------------->
+		<div class="works_nav">
+			<div class="works_nav_left">
+				<span>&#x3000;</span>
+				<a href="" class="pink">三亚婚纱摄影</a>
+				>
+				<a href="" class="pink">婚纱样片</a>
+			</div>
+			
+			<div class="works_nav_center">
+					<a href="" class="hover">婚纱样品</a>
+					<a href="">艺术写真</a>
+					<a href="">客片欣赏</a>
+			</div>
+			
+			<div class="works_nav_right">YIYI VISION WEDDING PHOTOGRAPHY</div>
+			
+		</div>
+		
+		
+		<!--图片展示区域(此处可以批量修改)-->
+		<div class="works_photo" ui-view>
+			
+		</div>
+		
+		
+		<!--翻页导航栏(此处可以批量修改)-->
+		
+		
+		<div class="works_changepage">
+			<ul >
+				<li ng-repeat="anumber in allNumber">
+					<a ui-sref={{anumber.uiSref}}>{{anumber.number}}</a>
+				</li>
+			</ul>
+			
+				<!--<a href="" style="background: url(../images/works-images/mpage_bg2.png) right;border: 5px solid #FFFFFF;">&#x3000;</a>-->
+		</div>
+		
+		
+		
+	
+		
+		<!--底部导航条-->	
+
+		<div class="nav_bottom">
+			<div>
+				<ul>
+					<li><a href="">依依视觉</a></li>
+					<b>.</b>
+					<li><a href="">新闻活动</a></li>
+					<b>.</b>
+					<li><a href="">作品展示</a></li>
+					<b>.</b>
+					<li><a href="">客片欣赏</a></li>
+					<b>.</b>
+					<li><a href="">服务报价</a></li>
+					<b>.</b>
+					<li><a href="">天猫商城</a></li>
+					<b>.</b>
+					<li><a href="">联系我们</a></li>
+				</ul>
+			</div>
+			
+			<div>
+				<img src="../images/首页图片/bom_r2_c14.png"/>
+			</div>
+			
+			<div >
+				<p>三亚依依视觉在<a href="">三亚婚纱摄影工作室</a>中,只专注<a href="">三亚旅游婚纱摄影</a>,以海景、游艇、<a href="">三亚水下婚纱照</a>为特色。</p>
+				<p>版权所有(C)  <a href="">三亚依依视觉婚纱摄影</a> 晋ICP备12004523号 技术支持：<a href="">品色创意设计中心</a></p>
+				<p>依依视觉地址：中国·海南省三亚市河西路259号 电话：400-805-0898 </p>
+			</div>
+			<div><img src="../images/首页图片/bom_r4_c24.png"/></div>
+			
+			<a href="#top" target="_self"><img src="../images/首页图片/bom_r8_c29.png"/></a>
+		</div>
+		
+		
+		
+	</body>
+</html>
